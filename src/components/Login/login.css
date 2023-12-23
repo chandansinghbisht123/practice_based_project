@@ -1,0 +1,25 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    margin-left: 100px;
+}
+
+.form {
+    background-color: rgb(222, 231, 228);
+    border-radius: 20px;
+    height: 200px;
+    width: 400px;
+}
+
+.container {
+    text-align: center;
+    font-size: 2em;
+
+}

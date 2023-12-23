@@ -1,7 +1,7 @@
 'use client'
 import React from 'react'
 import { useState } from 'react'
-
+import './signup.css'
 const Signup = () => {
     const [data, setData] = useState({
         userName: '',
@@ -20,7 +20,7 @@ const Signup = () => {
     return (
         <div className='form'>
             <div className='container'>Signup Form</div>
-            <form>
+            <form className='input'>
                 <label forhtml='username'> Username</label>
                 <input type='text'
                     placeholder='Username'
@@ -42,7 +42,7 @@ const Signup = () => {
                     name='password'
                     id='password' />
             </form>
-            
+            <button type='submit' style={{ marginLeft: '40%', marginTop: '30px' }}>Submit</button>
         </div>
     )
 }
