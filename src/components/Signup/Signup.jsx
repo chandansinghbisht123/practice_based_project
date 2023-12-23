@@ -1,6 +1,7 @@
 'use client'
 import React from 'react'
 import { useState } from 'react'
+import axios from 'axios'
 import './signup.css'
 const Signup = () => {
     const [data, setData] = useState({
@@ -17,6 +18,16 @@ const Signup = () => {
             [name]: value
         })
     };
+    const signupPage = async (e) => {
+        e.preventDefault()
+        let res = await axios.post('/api/user/signup', data)
+        console.log(res,'this is response coming from backend')
+        setData({
+            userName: '',
+            email: '',
+            password: ''
+        })
+    }
     return (
         <div className='form'>
             <div className='container'>Signup Form</div>
@@ -43,7 +54,7 @@ const Signup = () => {
                     id='password' />
             </form>
             <div className='signup-button'>
-                <input type='submit' placeholder='submit' className='signup-button' />
+                <input type='submit' placeholder='submit' className='signup-button' onClick={signupPage} />
             </div>
         </div>
     )
