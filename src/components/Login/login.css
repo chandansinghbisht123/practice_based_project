@@ -2,6 +2,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-image: url(https://d3nn873nee648n.cloudfront.net/900x600/20512/20-PS1047393.jpg);
+    background-size: cover;
 }
 
 .input {
@@ -11,15 +13,31 @@ body {
     margin-left: 100px;
 }
 
+input:focus{
+    color:red;
+    font-size: 1.2em;
+}
+
 .form {
-    background-color: rgb(222, 231, 228);
+    background-color: rgb(197, 245, 229);
+    opacity: 0.7;
     border-radius: 20px;
     height: 200px;
     width: 400px;
+    margin-top: 200px;
 }
 
 .container {
     text-align: center;
     font-size: 2em;
-
+    background-color: cornflowerblue;
 }
+
+.signup-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    font-size: 1.2em;
+   
+   }

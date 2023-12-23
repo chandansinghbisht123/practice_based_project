@@ -34,7 +34,9 @@ const Login = () => {
           name='password'
           id='password' />
       </form>
-      <button type='submit' style={{ marginLeft: '40%', marginTop: '30px' }}>Submit</button>
+      <div className='signup-button'>
+            <input type='submit' placeholder='submit' className='signup-button'/>
+            </div>
     </div>
   )
 }
