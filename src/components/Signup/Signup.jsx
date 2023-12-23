@@ -28,7 +28,7 @@ const Signup = () => {
                     name='userName'
                     id='userName' />
 
-                <label forhtml='email'> Emailhdfkjdskjfh</label>
+                <label forhtml='email'> Email</label>
                 <input type='text'
                     placeholder='Email'
                     onChange={handleChange}
@@ -43,7 +43,7 @@ const Signup = () => {
                     id='password' />
             </form>
             <div className='signup-button'>
-            <input type='submit' placeholder='submit' className='signup-button'/>
+                <input type='submit' placeholder='submit' className='signup-button' />
             </div>
         </div>
     )

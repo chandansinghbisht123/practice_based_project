@@ -13,8 +13,8 @@ body {
     margin-left: 100px;
 }
 
-input:focus{
-    color:red;
+input:focus {
+    color: red;
     font-size: 1.2em;
 }
 
@@ -33,11 +33,11 @@ input:focus{
     background-color: cornflowerblue;
 }
 
-.signup-button{
+.signup-button {
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 10px;
     font-size: 1.2em;
-   
-   }
+
+}

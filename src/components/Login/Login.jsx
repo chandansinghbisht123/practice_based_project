@@ -35,8 +35,8 @@ const Login = () => {
           id='password' />
       </form>
       <div className='signup-button'>
-            <input type='submit' placeholder='submit' className='signup-button'/>
-            </div>
+        <input type='submit' placeholder='submit' className='signup-button' />
+      </div>
     </div>
   )
 }
